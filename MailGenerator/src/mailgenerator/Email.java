@@ -41,10 +41,8 @@ public class Email {
                 new javax.mail.Authenticator() {
                     protected PasswordAuthentication getPasswordAuthentication()
                     {
-                        String seuEmail = "SEUEMAIL"; //INSIRA SEU EMAIL PARA AUTENTICAÇÃO
-                        String suaSenha = "SUASENHA"; //INSIRA SUA SENHA PARA AUTENTICAÇÃO
-                        return new PasswordAuthentication(seuEmail + "@gmail.com" ,
-                                suaSenha); 
+                        return new PasswordAuthentication(/* SEU EMAIL */ + "@gmail.com" ,
+                                /* SUA SENHA */); 
                     }
                 });
 
